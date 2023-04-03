@@ -1,0 +1,10 @@
+.city-menu {
+  width: 100%;
+  height: fit-content;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,185 @@
+.card-container {
+  position: relative;
+  width: 100rem;
+  height: 60rem;
+  border-radius: 4rem;
+  border: 4px solid white;
+  overflow: hidden;
+}
+
+.card-container::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.climat {
+  box-shadow: -1.5rem 1.5rem 2rem rgba(10, 17, 17, 0.6);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.card-container:hover::before {
+  scale: 1.3;
+}
+
+.info {
+  box-shadow: 1.5rem 1.5rem 2rem rgba(10, 17, 17, 0.6);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.weather-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+  position: relative;
+}
+
+.degrees-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  border: 4px solid white;
+  border-radius: 3rem;
+  padding: 1rem 6rem;
+  background-color: rgba(63, 78, 79, 0.4);
+}
+
+.location {
+  font-size: 6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #ffffff;
+  background-color: #3f4e4f;
+  border: 4px solid white;
+  border-radius: 5rem;
+  padding: 1rem 3rem;
+  margin: 0;
+}
+
+.date {
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.month {
+  font-size: 5.2rem;
+  background-color: #3f4e4f;
+  border: 4px solid white;
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+}
+
+.climat-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  border: 4px solid white;
+  border-radius: 3rem;
+  padding: 1rem 7.5rem;
+}
+
+.weather {
+  font-size: 5.2rem;
+  color: #ffffff;
+  background-color: #3f4e4f;
+  border: 4px solid white;
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+}
+
+.icon-current {
+  scale: 1.9;
+}
+
+.current-degrees {
+  font-size: 6rem;
+  color: #ffffff;
+}
+
+.max-min-degrees {
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.wind-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border: 4px solid white;
+  border-radius: 3rem;
+  padding: 1rem 4rem;
+  background-color: rgba(63, 78, 79, 0.4);
+  align-self: center;
+}
+
+.icon {
+  color: white;
+}
+
+.wind-text-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wind-text {
+  text-align: center;
+  color: #ffffff;
+  font-size: 4rem;
+  padding: 0;
+}
+
+.wind-text-wrapper {
+  border: 4px solid white;
+  border-radius: 3rem;
+  background-color: rgba(63, 78, 79, 1);
+  padding: 0 1rem;
+}
+
+.general-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  align-self: center;
+  border: 4px solid white;
+  border-radius: 3rem;
+  padding: 1rem 4rem;
+  background-color: rgba(63, 78, 79, 0.4);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.small-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: -1rem;
+}
